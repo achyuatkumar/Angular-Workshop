@@ -1,0 +1,8 @@
+<div *ngFor="let post of posts">
+    <div>
+        <img src="#" alt=""/>
+        <h2>{{post.title}}</h2>
+        <app-like [like]="post.isLiked" [likesCount]="post.likesCount" (clickIcon)="iconClicked($event)"></app-like>
+    </div>
+    
+</div>
