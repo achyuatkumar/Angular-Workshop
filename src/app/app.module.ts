@@ -8,6 +8,7 @@ import { LikeDislikeComponent } from './like-dislike/like-dislike.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { PostPageComponent } from './post-page/post-page.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PostPageComponent } from './post-page/post-page.component';
     ParentComponent,
     ChildComponent,
     PostPageComponent,
+    LikeComponent,
   ],
   imports: [
     BrowserModule,

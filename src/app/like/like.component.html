@@ -1,0 +1,12 @@
+<!-- <div *ngIf="isLiked">
+    <i class="bi bi-star-fill" (click)="onClick()"></i>
+    <p>{{likesCount}}</p>
+</div>
+<div *ngIf="!isLiked">
+    <i class="bi bi-star" (click)="onClick()"></i>
+    <p>{{likesCount}}</p>
+</div> -->
+<div>
+    <i class="bi" [class.bi-star-fill]="isLiked" [class.bi-star]="!isLiked" (click)="onClick()"></i>
+    <p>{{likesCount}}</p>
+</div>
