@@ -14,6 +14,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SettingsComponent } from './settings/settings.component';
 import { PostDetailsComponent } from './post-details/post-details.component';
+import { ProductsComponent } from './products/products.component';
+import { HttpClientModule } from "@angular/common/http"
 
 @NgModule({
   declarations: [
@@ -28,10 +30,12 @@ import { PostDetailsComponent } from './post-details/post-details.component';
     SidebarComponent,
     SettingsComponent,
     PostDetailsComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

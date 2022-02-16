@@ -5,6 +5,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { PostDetailsComponent } from './post-details/post-details.component';
 import { PostPageComponent } from './post-page/post-page.component';
 import { SettingsComponent } from './settings/settings.component';
+import {ProductsComponent} from "./products/products.component"
 
 const routes: Routes = [
   {path:'login',component:LoginPageComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
     {path:'',redirectTo:'posts', pathMatch:'full'},
     {path:'posts',component:PostPageComponent},
     {path:'posts/:postId',component:PostDetailsComponent},
-    {path:'settings',component:SettingsComponent}
+    {path:'settings',component:SettingsComponent},
+    {path:'products',component:ProductsComponent}
   ]}
 ];
 

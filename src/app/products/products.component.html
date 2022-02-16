@@ -1,0 +1,8 @@
+<div *ngFor="let product of productList" >
+    <div class="product" > 
+        <p>{{ product.name }}</p>
+        <p>{{ product.quantity }} items</p>
+        <p>{{ product.price }} $</p>
+        <button (click)="deleteProduct(product.id)" >Delete</button>
+    </div>
+</div>
